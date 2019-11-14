@@ -1,1 +1,78 @@
-/* You can add global styles to this file, and also import other style files */
+app-root{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+router-outlet{
+    margin-left: 300px;
+}
+app-login{
+    display: flex;
+}
+
+body{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
+app-header{
+    width: 15%;
+    max-width: 250px;
+    height: 100vh;
+    position: fixed;
+    margin-right: 30px;
+    background-color: #d0aa65;
+    color: white;
+    box-shadow: 10px 10px 28px -9px rgba(0, 0, 0, 0.75);
+
+    ul{
+        padding: 0px;
+        text-align: center;
+        li{
+            list-style-type: none;
+            outline: none;
+        }
+    }
+}   
+
+app-cv{
+    width: 100%;
+    margin-right: 30px;
+    font-family: ProximaNovaCond,Arial,sans-serif;
+}
+
+.login-form{
+    margin: 30px auto;
+}
+
+app-login{
+    width: 100%;
+}
+
+app-works{
+    width: 100%;
+}
+
+app-post{
+    width: 100%;
+}
+
+app-admin-edit{
+    width: 100%;
+}
+
+.wrapp-edit{
+
+    position: absolute;
+    right: 1%;
+    top: 0px;
+
+}
+
+.edit{
+    width: 30px;
+    height: 30px;
+}
