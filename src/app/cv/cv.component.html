@@ -1,0 +1,35 @@
+<div class="cartPage">
+ <div class="prevInfo">
+        <span class="myName">{{items?.name}}</span>
+        <div class="cont-info">
+        <span class="birthday"><strong>Дата рождения:</strong> {{items?.birthday}}</span>
+        <span class="phone"><strong>Котактные данные:</strong>
+            <ul>
+                <li><strong>Телефон:</strong> {{items?.phone}}</li>
+                <li><strong>e-mail:</strong> {{items?.mail}}</li>
+            </ul>
+        </span>
+        </div>
+ </div>   
+</div>
+<hr>
+<div class="detailed-info">
+    <span class="position">{{items?.position}}</span>
+    <div class="experience">
+        <span class="exp-title">Опыт работы:</span>
+        <ul>
+            <li>Компания: {{items?.work_experience.seologic.name}}</li>
+            <li>Позиция: {{items?.work_experience.seologic.position_on_company}}</li>
+            <li>Стаж работы: {{items?.work_experience.seologic.time_work}}</li>
+        </ul>
+    </div>
+
+</div>
+<span class="sk-title">Ключевые навыки</span>
+<div class="skills">
+    <span *ngFor="let i of items?.skill">{{i}}</span>
+</div>
+<div>
+    <span class="sk-title">Обо мне</span>
+    <span>{{items?.full_text}}</span>
+</div>

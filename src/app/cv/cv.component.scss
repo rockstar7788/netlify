@@ -1,0 +1,78 @@
+.cartPage{
+    display: flex;
+    margin-top: 30px;
+}
+
+app-cv{
+    width: 100%;
+}
+
+.myFoto{
+    img{
+        max-width: 160px;
+        border-radius: 10px;
+    }
+}
+
+.prevInfo{
+    padding: 0 30px;
+
+    .myName{
+        display: block;
+        font-size: 30px;
+        font-weight: 400;
+    }
+}
+
+.cont-info{
+    margin-top: 30px;
+}
+
+.phone{
+    margin-top: 10px;
+    display: block;
+
+    ul{
+        margin-top: 5px;
+    }
+}
+
+.position{
+    display: block;
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: right;
+}
+
+.experience{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    ul{
+        margin-top: 5px;
+    }
+}
+
+.exp-title{
+    font-size: 20px;
+    color: #8e939b;
+}
+
+.sk-title{
+    display: block;
+    font-size: 20px;
+    color: #8e939b;
+    margin-bottom: 10px;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    span{
+        display: block;
+        padding: 10px;
+        color: #666;
+        margin: 5px;
+        background-color: rgba(203,209,211,.3);;
+    }
+}

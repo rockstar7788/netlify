@@ -1,0 +1,53 @@
+.wrapper-post{
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+    > .Back{
+        margin: 20px auto;
+    }
+}
+.header-post{
+    display: flex;
+    .post-img{
+        img{
+            max-width: 220px;
+        }
+    }
+
+    .post-text{
+        padding: 0 2%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .title-post{
+        font-weight: bold;
+        font-size: 22px;
+        
+    }
+
+    .date{
+        display: block;
+        margin: 5px 0;
+        color: #8f8f8f;   
+    }
+
+}
+
+.full_text{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.Back{
+    display: block;
+    background-color: #d0aa65;
+    color: white;
+    padding: 10px;
+    max-width: 150px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}

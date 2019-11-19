@@ -1,0 +1,23 @@
+<div class="blog">
+    <div *ngFor="let post of posts?.blog" class="block-prev">
+        <div class="wrapp-edit">
+            <img src="https://img.icons8.com/officel/452/edit.png" routerLink="/edit" (click)="this.db.formdata(post.title, post.img, post.prev_text, post.id, post.prev_text)" class="edit">
+            <img src="http://s1.iconbird.com/ico/2013/10/464/w512h5121380984637delete1.png" class="edit" (click)="DeletePost(post.id)">
+        </div>
+        <a routerLink={{post.id}}>
+        <div class="img-prev">
+            <img src={{post.img}}>
+        </div>
+        <div class="text-blog">
+            <span class="title-prev">{{post.title}}</span>
+            <span class="date">Дата публикации: {{post.date | datePublished}}</span>
+            <span class="date">Время чтения: {{post.full_text | timeRead}}</span>
+            <div class="prev-text">
+                <span>{{post.prev_text}}</span>
+                </div>
+        </div>
+
+        </a>
+    </div>
+    <div class="ss">{{datas | json}}</div>
+</div>

@@ -1,0 +1,21 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+<span class="title">Post editing</span>
+        <label>
+          Title post:
+          <input type="text" formControlName="title">
+        </label>
+      
+        <label>
+          Image:
+          <input type="text" formControlName="img">
+        </label>
+        <label>
+          Preview: 
+          <textarea type="text" formControlName="preview"></textarea>
+      </label>
+        <label>
+            Article: 
+            <textarea type="text" formControlName="articles"></textarea>
+        </label>
+        <button type="submit">Save</button>
+</form>

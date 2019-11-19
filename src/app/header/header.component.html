@@ -1,0 +1,30 @@
+<div class="my-info">
+
+    <span class="title-ang">Angular Blog</span>
+    <div>
+        <img src={{items.foto}}>
+    </div>
+
+</div>
+<p class="full-text">
+    {{items.header_text}}
+</p>
+<div class="social">
+        <div>
+            <a href="{{items.gitHub}}">
+                <img src="https://boxboat.com/assets/wf/images/github.9412ae55426a.png">
+            </a>
+        </div>
+        <div>
+                <a href="{{items.linked}}">
+                    <img src="https://bestpractice.bmj.com/images/linkedIn_logo_circle.png">
+                </a>
+        </div>
+    </div>
+<nav>
+<ul>
+    <li routerLink="">Резюме</li>
+    <li routerLink="/works">Блог</li>
+    <li routerLink="/edit">Добавить статью</li>
+</ul>
+</nav>
